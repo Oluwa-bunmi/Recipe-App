@@ -17,16 +17,16 @@ const Home = () => {
   };
   return (
     <div>
-      <h1>RecipePalace</h1>
+      
       <div className="container">
         {recipe.map((recipe) => {
           return (
             <div className="movie" key={recipe.id}>
               <div>
-                <p>{recipe.title}</p>
+                <img src={recipe.image} alt="" />
               </div>
               <div>
-                <img src={recipe.image} alt="" />
+                <p>{recipe.title}</p>
               </div>
             </div>
           );
