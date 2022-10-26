@@ -3,8 +3,9 @@ import Home from "./components/Home";
 import "./App.css";
 import SearchIcon from "./search.svg";
 import Search from "./components/Search";
-import { BrowserRouter } from "react-router-dom";
-import Pages from "./pages/Pages";
+// import Pages from "./pages/Pages";
+import Searched from "./pages/Searched";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   // const [recipe, setRecipe] = useState([]);
@@ -31,23 +32,16 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <BrowserRouter> */}
+      <Router>
         <h1>RecipePalace</h1>
         <Search icon={SearchIcon} />
-        <Home />
-        {/* <{recipe?.length > 0 ? (
-          <div className="container" key={recipe.id}>
-            {recipe.map((recipe) => (
-              <Home recipe={recipe} />
-            ))}
-          </div>
-        ) : (
-          <div className="empty">
-            <h2> No recipe found</h2>
-          </div>
-        )}>
-        ; */}
-      {/* </BrowserRouter> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/searched/:search" element={<Searched />} />
+        </Routes>
+
+       
+      </Router>
     </div>
   );
 };

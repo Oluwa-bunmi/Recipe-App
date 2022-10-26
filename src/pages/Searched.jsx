@@ -1,7 +1,7 @@
 import React from "react";
 
 const Searched = () => {
-    return ( <></> );
-}
- 
+  return <>Searched</>;
+};
+
 export default Searched;
