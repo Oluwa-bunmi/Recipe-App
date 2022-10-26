@@ -18,7 +18,11 @@ const Search = ({ icon }) => {
         value={input}
         onChange={(event) => setinput(event.target.value)}
       />
-      <img src={icon} alt="search" />
+      <img
+        src={icon}
+        alt="search"
+        onClick={() => navigate("/searched/" + input)}
+      />
     </form>
   );
 };
