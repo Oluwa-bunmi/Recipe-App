@@ -8,6 +8,7 @@ const Search = ({ icon }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    navigate("/searched/" + input)
   };
   return (
     <form onSubmit={handleSubmit} className="search">
