@@ -25,13 +25,14 @@ const Searched = () => {
         {searchedRecipes.map((item) => {
           return (
             <div className="movie" key={item.id}>
-              <Link to={"/recipe/" + item.id }></Link>
-              <div>
-                <img src={item.image} alt="" />
-              </div>
-              <div>
-                <p>{item.title}</p>
-              </div>
+              <Link to={"/recipe/" + item.id}>
+                <div>
+                  <img src={item.image} alt="" />
+                </div>
+                <div>
+                  <p>{item.title}</p>
+                </div>
+              </Link>
             </div>
           );
         })}
