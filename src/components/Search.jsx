@@ -1,22 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 
-const Search = ({ icon, isLoading, query, setQuery, handleSubmit, searchRecipes }) => {
+const Search = ({icon}) => {
+  const [input, setinput] = useState("");
+
+   const handleSubmit = (event) => {
+     event.preventDefault();
+   
+   };
   return (
-    // <form onSubmit={handleSubmit} className="search">
-    <div className="search">
+    <form onSubmit={handleSubmit} className="search">
+      {/* <div className="search"> */}
       <input
         type="text"
         placeholder="Search for recipes"
-        value={query}
-        name={query}
-        // disabled={isLoading}
-        onChange={(event) => setQuery(event.target.value)}
+        value={input}
+        
+        onChange={(event) => setinput(event.target.value)}
       />
-      <img src={icon} alt="search"  />
-    </div>
-    //   {/* onClick={() => searchRecipes(query)} */}
-    // // </form>
+      <img src={icon} alt="search" />
+      {/* </div> */}
+      
+    </form>
   );
 };
 
