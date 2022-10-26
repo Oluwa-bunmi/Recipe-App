@@ -168,11 +168,14 @@ a{
  
 }
 .active{
-  background: linear-gradient(35deg, #494949, #313131);
-  color: #fff;
+  background-color: rgb(190, 133, 86);
+  /* color: #fff; */
+  /* color: #a1a1a1; */
+   font-size: 1.1rem;
 }
 h3{
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 li{
   font-size: 1.2rem;
@@ -184,10 +187,10 @@ ul{
 button{
   border: 2px solid black;
   padding: 1rem 2rem;
-  color: #313131;
+ 
   background-color: #fff;
   margin-right: 2rem;
-  /* font-weight: 600; */
+  font-size: 1.1rem;
 
 }
 .info{

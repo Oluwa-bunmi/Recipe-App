@@ -22,7 +22,7 @@ const Recipe = () => {
   return (
     <div className="wrapper">
       <div>
-        <h2>{details.title}</h2>
+        <h2 style={{marginBottom: "5rem"}}>{details.title}</h2>
         <img src={details.image} alt="" />
       </div>
       <div className="info">
