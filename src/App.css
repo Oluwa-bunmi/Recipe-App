@@ -103,6 +103,9 @@ h1 {
   color: #f9d3b4;
   font-family: var(--font-raleway);
 }
+a{
+  text-decoration: none;
+}
 
 .container {
   width: 100%;

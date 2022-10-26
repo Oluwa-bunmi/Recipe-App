@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 const Searched = () => {
@@ -24,6 +25,7 @@ const Searched = () => {
         {searchedRecipes.map((item) => {
           return (
             <div className="movie" key={item.id}>
+              <Link to={"/recipe/" + item.id }></Link>
               <div>
                 <img src={item.image} alt="" />
               </div>
