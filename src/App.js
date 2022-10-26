@@ -5,6 +5,7 @@ import SearchIcon from "./search.svg";
 import Search from "./components/Search";
 // import Pages from "./pages/Pages";
 import Searched from "./pages/Searched";
+import Recipe from "./pages/Recipe";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -38,6 +39,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/searched/:search" element={<Searched />} />
+          <Route path="/recipe/:name" element={<Recipe />} />
         </Routes>
 
        
