@@ -22,22 +22,24 @@ const Recipe = () => {
   return (
     <div className="wrapper">
       <div>
-        <h2 style={{marginBottom: "5rem"}}>{details.title}</h2>
+        <h2 style={{ marginBottom: "5rem" }}>{details.title}</h2>
         <img src={details.image} alt="" />
       </div>
       <div className="info">
-        <button
-          className={activeTab === "instructions" ? "active" : ""}
-          onClick={() => setActiveTab("instructions")}
-        >
-          Instructions
-        </button>
-        <button
-          className={activeTab === "ingredients" ? "active" : ""}
-          onClick={() => setActiveTab("ingredients")}
-        >
-          Ingredients
-        </button>
+        <div className="buttons">
+          <button
+            className={activeTab === "instructions" ? "active" : ""}
+            onClick={() => setActiveTab("instructions")}
+          >
+            Instructions
+          </button>
+          <button
+            className={activeTab === "ingredients" ? "active" : ""}
+            onClick={() => setActiveTab("ingredients")}
+          >
+            Ingredients
+          </button>
+        </div>
         {activeTab === "instructions" && (
           <div>
             <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>

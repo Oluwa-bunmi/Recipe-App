@@ -27,7 +27,7 @@ const Searched = () => {
             <div className="movie" key={item.id}>
               <Link to={"/recipe/" + item.id}>
                 <div>
-                  <img src={item.image} alt="" />
+                  <img src={item.image} alt="" className="searchedImage" />
                 </div>
                 <div>
                   <p>{item.title}</p>

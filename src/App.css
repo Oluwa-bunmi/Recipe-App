@@ -74,13 +74,10 @@ h1 {
   cursor: pointer;
 }
 
-
-
-
 a {
   text-decoration: none;
-  color: #a1a1a1;
-  /* color: rgb(138, 76, 76); */
+ 
+  color: rgb(170, 46, 46);
 }
 
 .container {
@@ -107,8 +104,6 @@ a {
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .movie:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
   transform: scale(1.05, 1.05);
@@ -120,7 +115,6 @@ a {
 }
 
 .movie div:nth-of-type(1) img {
-
   width: 100%;
 }
 .movie div:nth-child(2) p {
@@ -138,12 +132,13 @@ a {
 }
 .active {
   background-color: rgb(190, 133, 86);
- 
+
   font-size: 1.1rem;
 }
 h3 {
   margin-bottom: 2rem;
   margin-top: 2rem;
+  font-weight: lighter;
 }
 li {
   font-size: 1.2rem;
@@ -161,24 +156,36 @@ button {
   font-size: 1.1rem;
 }
 .info {
-  margin-left: 10rem;
+  margin-left: 2rem;
+}
+.buttons{
+  display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
   .wrapper {
     flex-direction: column;
+    margin-top: 2rem;
+  }
+  .info {
+    margin: 4rem 0 0 0;
+  }
+  img{
+    width: 100%;
+  }
+
+  
+}
+@media screen and (max-width: 496px) {
+
+/* img {
+    width: 280px ;
+  } */
+  button{
+        padding: 8px 10px;
+    font-size: 18px;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 600px) {
   .App {
