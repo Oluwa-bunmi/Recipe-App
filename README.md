@@ -1,1 +1,1 @@
-A recipe app, check @ https://recipe-app-psi-two.vercel.app/ 
+A recipe app, check @ https://recipe-app-oluwa-bunmi.vercel.app/
