@@ -31,7 +31,7 @@ const Home = () => {
       <div className="container">
         {recipe.map((recipe) => {
           return (
-            <div className="movie" key={recipe.id}>
+            <div className="box" key={recipe.id}>
               <Link to={"/recipe/" + recipe.id }>
               <div>
                 <img src={recipe.image} alt="" />

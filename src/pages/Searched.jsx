@@ -24,10 +24,10 @@ const Searched = () => {
       <div className="container">
         {searchedRecipes.map((item) => {
           return (
-            <div className="movie" key={item.id}>
+            <div className="box" key={item.id}>
               <Link to={"/recipe/" + item.id}>
                 <div>
-                  <img src={item.image} alt="" className="searchedImage" />
+                  <img src={item.image} alt="" />
                 </div>
                 <div>
                   <p>{item.title}</p>
